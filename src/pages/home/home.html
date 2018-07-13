@@ -1,0 +1,40 @@
+<!-- <ion-header>
+  <ion-navbar>
+    <ion-title>
+      
+    </ion-title>
+  </ion-navbar>
+</ion-header> -->
+
+<ion-content padding>
+
+  <ion-list>
+    <ion-item *ngFor="let user of arrayUsuarios" (click)="editNewCliente(user)"> 
+        <h1>
+          {{ user.nombre + ' ' + user.apellido}}
+      </h1>
+    </ion-item>
+  </ion-list>
+
+
+    <ion-fab left bottom>
+        <button  ion-fab (click)="ayuda()" ><ion-icon name="help"></ion-icon></button>
+    </ion-fab>
+    <ion-fab  mini right bottom>
+      <button ion-fab color="secondary"><ion-icon name="document"></ion-icon></button>
+      <ion-fab-list side="left">
+        <button ion-fab (click)="mostrarDocumentacion('apidoc')"  >Adoc</button>
+        <button ion-fab (click)="mostrarDocumentacion('compodoc')" >Cdoc</button>
+      </ion-fab-list>
+    </ion-fab>
+
+</ion-content>
+<ion-footer>
+    <ion-toolbar color="micolor" >
+      <ion-title>Documentación y tutoriales</ion-title>
+
+    </ion-toolbar>
+    <ion-fab right bottom>
+        <button color="micolor" ion-fab (click)="editNewCliente()" ><ion-icon name="add"></ion-icon></button>
+      </ion-fab>
+  </ion-footer>
