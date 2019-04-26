@@ -1,2 +1,2 @@
 # MiniAppDocumentacion
-MiniAppDocumentacion para Final de PPS 2018
+MiniAppDocumentacion para Final de PPS 2018 Con IONIC 3
